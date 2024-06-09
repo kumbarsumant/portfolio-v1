@@ -10,7 +10,7 @@ const theme = createTheme({
 			dark: colors.primaryColorDarken,
 			contrastText: colors.whiteColor,
 		},
-		secondar: {
+		secondary: {
 			main: colors.lightGreyColor,
 			contrastText: colors.darkColor,
 		},
