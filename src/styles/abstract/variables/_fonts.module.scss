@@ -1,0 +1,9 @@
+$font-primary: 'Playfair Display', serif;
+$font-secondary: 'Inter', sans-serif;
+$font-tertiary: 'Bricolage Grotesque', sans-serif;
+
+:export {
+	primaryFont: $font-primary;
+	secondaryFont: $font-secondary;
+	tertiaryFont: $font-tertiary;
+}
