@@ -14,6 +14,8 @@ module.exports = {
 	plugins: ['prettier'],
 	rules: {
 		'react/react-in-jsx-scope': 'off',
+		'react/jsx-props-no-spreading': 'off',
+		'react/require-default-props': 'off',
 		indent: ['error', 'tab'],
 		'no-tabs': 'off',
 		'react/jsx-indent': ['error', 'tab'],
