@@ -1,14 +1,29 @@
 # Portfolio
 
-A personal portfolio website showcasing my projects, skills, and experiences as a software developer.
+My personal portfolio website showcasing my projects, skills, and experiences.
+
+Demo link:
 
 ---
 
-# React + Vite
+## Table of content
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [Technologies](#technologies)
 
-Currently, two official plugins are available:
+### Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<a id="technologies"></a>
+
+- [Airbnb JavaScript style guid](https://airbnb.io/javascript/react/)
+- [Eslint](https://eslint.org/)
+- [Husky](https://www.npmjs.com/package/husky)
+- [Lint staged](https://www.npmjs.com/package/lint-staged)
+- [Material UI](https://mui.com/material-ui/)
+- [Sass](https://sass-lang.com/)
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+
+Thank you for staying with me up to this point. Suggestions and feedbacks are always welcomed 😃.
+<br>
+<br>
+Email: my.personal.sumanth@gmail.com
