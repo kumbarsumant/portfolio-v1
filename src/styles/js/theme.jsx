@@ -12,6 +12,10 @@ const theme = createTheme({
 			main: colors.lightGreyColor,
 			contrastText: colors.darkColor,
 		},
+		info: {
+			main: colors.lightGreyColor2,
+			contrastText: colors.whiteColor,
+		},
 	},
 	typography: {
 		h1: {
@@ -27,14 +31,17 @@ const theme = createTheme({
 		h3: {
 			fontFamily: fonts.tertiaryFont,
 			color: colors.primaryColor,
+			fontSize: '4rem',
 		},
 		h4: {
 			fontFamily: fonts.tertiaryFont,
 			color: colors.primaryColor,
+			fontSize: '2rem',
 		},
 		h5: {
 			fontFamily: fonts.tertiaryFont,
 			color: colors.primaryColor,
+			fontSize: '1.6rem',
 		},
 		body1: {
 			fontFamily: fonts.secondaryFont,

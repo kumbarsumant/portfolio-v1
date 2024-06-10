@@ -1,21 +1,19 @@
 $color-primary: #885f4c;
-// $color-primary-lighten: lighten($color-primary, 20%);
-// $color-primary-darken: lighten($color-primary, 20%);
 
 $color-white: #fff;
 $color-black: #000;
 
 $color-dark: #1d1e1e;
 $color-grey-light: #dbdddc;
+$color-grey-light-2: #999;
 $color-grey: #3c3c43c7;
 
 :export {
 	primaryColor: $color-primary;
-	// primaryColorLighten: $color-primary-lighten;
-	// primaryColorDarken: $color-primary-darken;
 	secondaryColor: $color-dark;
 	whiteColor: $color-white;
 	darkColor: $color-dark;
 	greyColor: $color-grey;
 	lightGreyColor: $color-grey-light;
+	lightGreyColor2: $color-grey-light-2;
 }
