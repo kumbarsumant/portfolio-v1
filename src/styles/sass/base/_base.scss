@@ -9,3 +9,9 @@
 html {
 	font-size: 62.5%;
 }
+
+body {
+	width: 100%;
+	max-width: $max-width;
+	margin: 2rem auto;
+}

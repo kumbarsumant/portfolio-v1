@@ -17,10 +17,12 @@ const theme = createTheme({
 		h1: {
 			fontFamily: fonts.primaryFont,
 			color: colors.darkColor,
+			fontSize: '8rem',
 		},
 		h2: {
 			fontFamily: fonts.primaryFont,
 			color: colors.darkColor,
+			fontSize: '6rem',
 		},
 		h3: {
 			fontFamily: fonts.tertiaryFont,
@@ -37,10 +39,12 @@ const theme = createTheme({
 		body1: {
 			fontFamily: fonts.secondaryFont,
 			color: colors.greyColor,
+			fontSize: '1.6rem',
 		},
 		body2: {
 			fontFamily: fonts.secondaryFont,
 			color: colors.greyColor,
+			fontSize: '1.4rem',
 		},
 	},
 });
