@@ -1,13 +1,11 @@
 import { createTheme } from '@mui/material/styles';
-import colors from './abstract/variables/_colors.module.scss';
-import fonts from './abstract/variables/_fonts.module.scss';
+import colors from '../sass/abstract/variables/_colors.module.scss';
+import fonts from '../sass/abstract/variables/_fonts.module.scss';
 
 const theme = createTheme({
 	palette: {
 		primary: {
 			main: colors.primaryColor,
-			light: colors.primaryColorLighten,
-			dark: colors.primaryColorDarken,
 			contrastText: colors.whiteColor,
 		},
 		secondary: {
