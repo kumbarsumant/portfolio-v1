@@ -25,6 +25,8 @@ const Button = ({
 		</MUIButton>
 	);
 };
+
+// props validation
 Button.propTypes = {
 	children: PropTypes.node,
 	variant: PropTypes.oneOf(['text', 'outlined', 'contained']),

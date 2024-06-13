@@ -24,6 +24,7 @@ const Link = ({ href, children, variant = 'secondary' }) => {
 	);
 };
 
+// props validation
 Link.propTypes = {
 	href: PropTypes.string.isRequired,
 	children: PropTypes.node,

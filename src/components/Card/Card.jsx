@@ -41,6 +41,7 @@ const Card = ({ title, body, actions, ...props }) => {
 	);
 };
 
+// props validation
 Card.propTypes = {
 	title: PropTypes.string,
 	body: PropTypes.string,

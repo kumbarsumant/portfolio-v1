@@ -18,8 +18,8 @@ const TextField = ({ label = '', variant = 'standard', ...props }) => {
 					fontFamily: fonts.tertiaryFont,
 				},
 				'& .MuiFormHelperText-root': {
-					fontFamily: fonts.tertiaryFont,
 					fontSize: '1.2rem',
+					fontFamily: fonts.tertiaryFont,
 				},
 			}}
 			{...props}
@@ -27,6 +27,7 @@ const TextField = ({ label = '', variant = 'standard', ...props }) => {
 	);
 };
 
+// props validation
 TextField.propTypes = {
 	label: PropTypes.string,
 	variant: PropTypes.oneOf(['standard', 'outlined', 'filled']),

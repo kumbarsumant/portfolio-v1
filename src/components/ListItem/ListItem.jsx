@@ -8,4 +8,5 @@ ListItem.propTypes = {
 	children: PropTypes.node,
 };
 
+// props validation
 export default ListItem;

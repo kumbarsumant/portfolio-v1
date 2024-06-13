@@ -7,6 +7,7 @@ const UlContainer = ({ children, variant = 'primary' }) => {
 	return <ul className={classes}>{children}</ul>;
 };
 
+// props validation
 UlContainer.propTypes = {
 	children: PropTypes.node,
 	variant: PropTypes.string,

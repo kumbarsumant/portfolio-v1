@@ -13,6 +13,7 @@ const MenuItem = ({ href, children, active }) => {
 	);
 };
 
+// props validation
 MenuItem.propTypes = {
 	href: PropTypes.string,
 	children: PropTypes.node,

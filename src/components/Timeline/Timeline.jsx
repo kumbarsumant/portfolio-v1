@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import { Grid, Stack } from '@mui/material';
+import Grid from '../Grid';
+import Stack from '../Stack';
 import styles from './Timeline.module.scss';
 
 const Timeline = ({ children }) => {
@@ -25,6 +26,7 @@ const Timeline = ({ children }) => {
 	);
 };
 
+// props validation
 Timeline.propTypes = {
 	children: PropTypes.node,
 };

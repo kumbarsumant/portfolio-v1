@@ -9,6 +9,7 @@ const Typography = ({ children, variant = 'body1', ...props }) => {
 	);
 };
 
+// prop validations
 Typography.propTypes = {
 	children: PropTypes.node,
 	variant: PropTypes.string,

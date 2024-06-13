@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import { Stack, LinearProgress } from '@mui/material';
+import { LinearProgress } from '@mui/material';
+import Stack from '../Stack';
 import Typography from '../Typography';
 import { styleVariables } from '../../styles';
 
@@ -44,6 +45,7 @@ const LinearProgressBar = ({ label, progress }) => {
 	);
 };
 
+// props validation
 LinearProgressBar.propTypes = {
 	label: PropTypes.string,
 	progress: PropTypes.number,
