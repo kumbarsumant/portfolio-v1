@@ -1,0 +1,7 @@
+@import '../../styles/sass/main.scss';
+
+.btn {
+	&:hover {
+		box-shadow: none !important;
+	}
+}

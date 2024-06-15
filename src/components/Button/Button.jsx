@@ -1,5 +1,6 @@
 import { Button as MUIButton } from '@mui/material';
 import PropTypes from 'prop-types';
+import styles from './Button.module.scss';
 import { styleVariables } from '../../styles';
 
 const { fonts } = styleVariables;
@@ -20,7 +21,13 @@ const Button = ({
 	};
 
 	return (
-		<MUIButton variant={variant} color={color} sx={customStyles} {...props}>
+		<MUIButton
+			variant={variant}
+			color={color}
+			sx={customStyles}
+			className={styles.btn}
+			{...props}
+		>
 			{children}
 		</MUIButton>
 	);

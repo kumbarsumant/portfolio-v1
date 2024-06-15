@@ -10,12 +10,13 @@ const theme = createTheme({
 		},
 		secondary: {
 			main: colors.lightGreyColor,
+			dark: colors.lightGreyColor2,
 			contrastText: colors.darkColor,
 		},
-		info: {
-			main: colors.lightGreyColor2,
-			contrastText: colors.whiteColor,
-		},
+		// info: {
+		// 	main: colors.lightGreyColor2,
+		// 	contrastText: colors.whiteColor,
+		// },
 	},
 	typography: {
 		h1: {

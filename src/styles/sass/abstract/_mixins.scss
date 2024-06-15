@@ -1,0 +1,19 @@
+$phone: '600px';
+$tablet: '900px';
+$tablet-port: '1160px';
+
+@mixin media($size) {
+	@if $size == phone {
+		@media (max-width: $phone) {
+			@content;
+		}
+	} @else if $size == tab {
+		@media (max-width: $tablet) {
+			@content;
+		}
+	} @else if $size == tab-port {
+		@media (max-width: $tablet-port) {
+			@content;
+		}
+	}
+}

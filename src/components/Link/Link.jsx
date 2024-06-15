@@ -1,26 +1,22 @@
 import PropTypes from 'prop-types';
-import { Link as MUILink } from '@mui/material';
-import { styleVariables } from '../../styles';
+import styles from './Link.module.scss';
 
-const { fonts } = styleVariables;
-
-const Link = ({ href, children, variant = 'secondary' }) => {
-	const color =
-		variant === 'primary'
-			? styleVariables.colors.primaryColor
-			: styleVariables.colors.lightGreyColor2;
+const Link = ({
+	href,
+	children,
+	className,
+	variant = 'secondary',
+	...props
+}) => {
+	const classes = styles[variant];
 	return (
-		<MUILink
+		<a
 			href={href}
-			sx={{
-				fontFamily: fonts.tertiaryFont,
-				fontSize: '1.6rem',
-				textDecoration: 'none',
-				color,
-			}}
+			className={`${styles.link} ${classes} ${className || ''}`}
+			{...props}
 		>
 			{children}
-		</MUILink>
+		</a>
 	);
 };
 
@@ -29,6 +25,7 @@ Link.propTypes = {
 	href: PropTypes.string.isRequired,
 	children: PropTypes.node,
 	variant: PropTypes.string,
+	className: PropTypes.string,
 };
 
 export default Link;
