@@ -1,31 +1,19 @@
 import { Button as MUIButton } from '@mui/material';
 import PropTypes from 'prop-types';
 import styles from './Button.module.scss';
-import { styleVariables } from '../../styles';
-
-const { fonts } = styleVariables;
 
 const Button = ({
 	children,
 	variant = 'contained',
 	color = 'primary',
+	className,
 	...props
 }) => {
-	const customStyles = {
-		borderRadius: 0,
-		boxShadow: 'none',
-		textTransform: 'capitalize',
-		fontFamily: fonts.tertiaryFont,
-		fontWeight: 400,
-		fontSize: '1.6rem',
-	};
-
 	return (
 		<MUIButton
 			variant={variant}
 			color={color}
-			sx={customStyles}
-			className={styles.btn}
+			className={`${className} ${styles.btn}`}
 			{...props}
 		>
 			{children}
@@ -38,6 +26,7 @@ Button.propTypes = {
 	children: PropTypes.node,
 	variant: PropTypes.oneOf(['text', 'outlined', 'contained']),
 	color: PropTypes.oneOf(['primary', 'secondary']),
+	className: PropTypes.string,
 };
 
 export default Button;

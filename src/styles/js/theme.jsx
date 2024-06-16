@@ -42,7 +42,13 @@ const theme = createTheme({
 		h5: {
 			fontFamily: fonts.tertiaryFont,
 			color: colors.primaryColor,
-			fontSize: '1.6rem',
+			fontSize: '1.8rem',
+		},
+		h6: {
+			fontFamily: fonts.tertiaryFont,
+			color: colors.greyColor,
+			fontSize: '1.8rem',
+			fontWeight: 300,
 		},
 		body1: {
 			fontFamily: fonts.secondaryFont,

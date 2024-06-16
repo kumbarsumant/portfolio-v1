@@ -1,0 +1,109 @@
+@import '../../styles/sass/main.scss';
+
+.section {
+	&Hero {
+		height: 100vh;
+	}
+}
+
+:global {
+	.MuiGrid-root.MuiGrid-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		height: 100%;
+		padding-top: 6rem;
+		flex-direction: row;
+
+		@include media(tab-port) {
+			flex-direction: row-reverse;
+			padding-top: 7rem;
+			row-gap: 2rem;
+		}
+	}
+}
+
+.mainTextContainer {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column !important;
+	height: 100%;
+
+	@include media(tab-port) {
+		order: 2;
+		height: auto;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+.mainImgContainer {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-direction: column !important;
+	height: 100%;
+
+	@include media(tab-port) {
+		order: 1;
+		height: auto;
+		align-items: center;
+	}
+}
+
+.img {
+	width: 38rem;
+
+	@include media(tab-port) {
+		width: 42rem;
+	}
+
+	@include media(phone) {
+		width: 30rem;
+	}
+
+	&Container {
+		position: relative;
+
+		&::before {
+			content: '';
+			height: calc(100% + 3rem);
+			width: calc(50% + 1.5rem);
+			position: absolute;
+			top: 50%;
+			right: 50%;
+			transform: translateY(-50%);
+			background-color: $color-grey-light;
+			z-index: -1;
+
+			@include media(phone) {
+				height: calc(100% + 2rem);
+				width: calc(50% + 1rem);
+			}
+		}
+	}
+}
+
+.btn {
+	@include media(phone) {
+		width: 100%;
+	}
+
+	&Container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+}
+
+// .heading {
+// 	margin-bottom: 2rem;
+// }
+
+// .subHeading {
+// 	margin-bottom: 2rem;
+// }

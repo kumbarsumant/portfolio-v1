@@ -1,6 +1,6 @@
 $phone: '600px';
 $tablet: '900px';
-$tablet-port: '1160px';
+$tablet-port: '1200px';
 
 @mixin media($size) {
 	@if $size == phone {

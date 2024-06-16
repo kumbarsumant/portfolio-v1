@@ -9,6 +9,8 @@ $menu-item-gap: 6rem;
 	width: 100%;
 	left: 50%;
 	transform: translateX(-50%);
+	background-color: $color-white;
+	z-index: 1000;
 }
 
 :global {
@@ -48,7 +50,7 @@ $menu-item-gap: 6rem;
 	padding: 2.5rem 0;
 
 	@include media(tab-port) {
-		padding: 4rem;
+		padding: 2rem;
 	}
 
 	@include media(tab) {

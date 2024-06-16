@@ -1,0 +1,21 @@
+@import '../../styles/sass/main.scss';
+
+h1.typography {
+	@include media(tab-port) {
+		font-size: 6rem !important;
+	}
+
+	@include media(phone) {
+		font-size: 4rem !important;
+	}
+}
+
+h6.typography {
+	@include media(tab-port) {
+		font-size: 2.4rem !important;
+	}
+
+	@include media(phone) {
+		font-size: 2rem !important;
+	}
+}
