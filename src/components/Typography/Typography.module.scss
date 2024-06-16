@@ -2,7 +2,7 @@
 
 h1.typography {
 	@include media(tab-port) {
-		font-size: 6rem !important;
+		font-size: 7rem !important;
 	}
 
 	@include media(phone) {
@@ -16,7 +16,7 @@ h1.typography {
 
 h2.typography {
 	@include media(tab-port) {
-		font-size: 5rem !important;
+		font-size: 6rem !important;
 	}
 
 	@include media(phone) {
@@ -30,7 +30,7 @@ h2.typography {
 
 h6.typography {
 	@include media(tab-port) {
-		font-size: 2.4rem !important;
+		font-size: 2.8rem !important;
 	}
 
 	@include media(phone) {
@@ -49,7 +49,7 @@ p.typography {
 	word-spacing: 0.2rem;
 
 	@include media(tab-port) {
-		font-size: 2.2rem;
+		font-size: 2.8rem;
 	}
 
 	@include media(phone) {

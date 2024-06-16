@@ -27,6 +27,10 @@
 			padding-top: 4rem;
 			row-gap: 2rem;
 		}
+
+		@include media(phone) {
+			row-gap: 4.5rem;
+		}
 	}
 }
 
