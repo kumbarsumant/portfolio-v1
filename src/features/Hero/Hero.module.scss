@@ -3,11 +3,18 @@
 .section {
 	&Hero {
 		height: 100vh;
+		min-height: 100vh;
+		padding-bottom: 0 !important;
+
+		@include media(phone) {
+			height: auto;
+			padding-top: 4rem !important;
+		}
 	}
 }
 
 :global {
-	.MuiGrid-root.MuiGrid-container {
+	.MuiGrid-root.MuiGrid-container.heroContainer {
 		display: flex;
 		justify-content: space-between;
 		align-items: stretch;
@@ -17,7 +24,7 @@
 
 		@include media(tab-port) {
 			flex-direction: row-reverse;
-			padding-top: 7rem;
+			padding-top: 4rem;
 			row-gap: 2rem;
 		}
 	}
@@ -62,6 +69,10 @@
 
 	@include media(phone) {
 		width: 30rem;
+	}
+
+	@include media(small-phone) {
+		width: 26rem;
 	}
 
 	&Container {

@@ -8,15 +8,8 @@ import profileImage from '../../assets/images/profile.jpg';
 const Hero = () => {
 	return (
 		<section className={`section ${styles.sectionHero}`}>
-			<Grid container className={styles.mainContainer}>
-				<Grid
-					item
-					xs={12}
-					sm={12}
-					md={12}
-					lg={7}
-					className={styles.mainTextContainer}
-				>
+			<Grid container className="heroContainer">
+				<Grid item xs={12} lg={7} className={styles.mainTextContainer}>
 					<Typography variant="h1">Hi, I&apos;m</Typography>
 					<Typography variant="h1" className="marginBottomMedium">
 						Sumant Kumbar.
@@ -35,14 +28,7 @@ const Hero = () => {
 						</Button>
 					</Box>
 				</Grid>
-				<Grid
-					item
-					xs={12}
-					sm={12}
-					md={12}
-					lg={5}
-					className={styles.mainImgContainer}
-				>
+				<Grid item xs={12} lg={5} className={styles.mainImgContainer}>
 					<div className={styles.imgContainer}>
 						<img src={profileImage} className={styles.img} alt="profile" />
 					</div>

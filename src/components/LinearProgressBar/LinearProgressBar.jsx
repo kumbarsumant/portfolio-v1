@@ -2,16 +2,12 @@ import PropTypes from 'prop-types';
 import { LinearProgress } from '@mui/material';
 import Stack from '../Stack';
 import Typography from '../Typography';
+import styles from './LinearProgressBar.module.scss';
 import { styleVariables } from '../../styles';
 
 const { colors } = styleVariables;
 
 const LinearProgressBar = ({ label, progress }) => {
-	const styleForLabel = {
-		fontSize: '1.4rem',
-		color: colors.darkColor,
-	};
-
 	return (
 		<Stack rowGap={1}>
 			{/* Label */}
@@ -21,11 +17,11 @@ const LinearProgressBar = ({ label, progress }) => {
 				justifyContent="space-between"
 				alignItems="center"
 			>
-				<Typography component="span" sx={styleForLabel}>
+				<Typography component="span" className={styles.label}>
 					{label}
 				</Typography>
 
-				<Typography component="span" sx={styleForLabel}>
+				<Typography component="span" className={styles.label}>
 					{`${progress}%`}
 				</Typography>
 			</Stack>
@@ -34,7 +30,7 @@ const LinearProgressBar = ({ label, progress }) => {
 			<LinearProgress
 				sx={{
 					'&.MuiLinearProgress-root': {
-						height: 6,
+						height: 8,
 						backgroundColor: colors.lightGreyColor,
 					},
 				}}

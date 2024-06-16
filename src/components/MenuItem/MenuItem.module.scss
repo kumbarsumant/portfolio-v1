@@ -28,8 +28,12 @@
 		}
 
 		@include media(phone) {
-			// padding: 3rem 4rem;
 			font-size: 2.2rem;
+		}
+
+		@include media(small-phone) {
+			padding: 2.5rem 3rem;
+			font-size: 2rem;
 		}
 
 		&:hover,

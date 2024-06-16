@@ -27,6 +27,10 @@ $menu-item-gap: 6rem;
 		@include media(phone) {
 			padding: 2rem;
 		}
+
+		@include media(small-phone) {
+			padding: 1.6rem;
+		}
 	}
 }
 
@@ -39,6 +43,10 @@ $menu-item-gap: 6rem;
 
 		@include media(phone) {
 			font-size: 4rem !important;
+		}
+
+		@include media(small-phone) {
+			font-size: 3rem !important;
 		}
 	}
 }
@@ -95,6 +103,10 @@ $menu-item-gap: 6rem;
 
 		@include media(phone) {
 			top: 8rem;
+		}
+
+		@include media(small-phone) {
+			top: 6.3rem;
 		}
 	}
 }

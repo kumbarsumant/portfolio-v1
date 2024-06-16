@@ -2,7 +2,8 @@ import React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './styles/js/theme';
 import Header from './layouts/Header';
-import Hero from './features/Hero/Hero';
+import Hero from './features/Hero';
+import About from './features/About';
 import './styles/sass/main.scss';
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
 			<Header />
 			<main>
 				<Hero />
+				<About />
 			</main>
 		</ThemeProvider>
 	);

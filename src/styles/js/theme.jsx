@@ -51,14 +51,17 @@ const theme = createTheme({
 			fontWeight: 300,
 		},
 		body1: {
-			fontFamily: fonts.secondaryFont,
+			fontFamily: fonts.tertiaryFont,
 			color: colors.greyColor,
 			fontSize: '1.6rem',
+			lineHeight: 1.4,
+			fontWeight: 300,
 		},
 		body2: {
 			fontFamily: fonts.secondaryFont,
 			color: colors.greyColor,
 			fontSize: '1.4rem',
+			lineHeight: 1.4,
 		},
 	},
 });

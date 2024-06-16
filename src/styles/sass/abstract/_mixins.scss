@@ -1,9 +1,14 @@
+$small-phone: '360px';
 $phone: '600px';
 $tablet: '900px';
 $tablet-port: '1200px';
 
 @mixin media($size) {
-	@if $size == phone {
+	@if $size == small-phone {
+		@media (max-width: $small-phone) {
+			@content;
+		}
+	} @else if $size == phone {
 		@media (max-width: $phone) {
 			@content;
 		}
@@ -13,6 +18,10 @@ $tablet-port: '1200px';
 		}
 	} @else if $size == tab-port {
 		@media (max-width: $tablet-port) {
+			@content;
+		}
+	} @else if $size == very-small-phone {
+		@media (max-width: '300px') {
 			@content;
 		}
 	}

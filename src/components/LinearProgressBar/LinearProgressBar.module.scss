@@ -1,0 +1,18 @@
+@import '../../styles/sass/main.scss';
+
+.label {
+	font-size: 1.4rem !important;
+	font-weight: 400 !important;
+
+	@include media(tab-port) {
+		font-size: 1.6rem !important;
+	}
+
+	@include media(tab) {
+		font-size: 2rem !important;
+	}
+
+	@include media(small-phone) {
+		font-size: 1.4rem !important;
+	}
+}

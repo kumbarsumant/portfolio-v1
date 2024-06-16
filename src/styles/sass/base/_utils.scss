@@ -10,10 +10,14 @@
 			@include media(tab-port) {
 				margin-bottom: 3rem !important;
 			}
+		}
 
-			// @include media(phone) {
-			// 	margin-bottom: 2rem !important;
-			// }
+		&SemiLarge {
+			margin-bottom: 3rem !important;
+
+			@include media(tab-port) {
+				margin-bottom: 3.3rem !important;
+			}
 		}
 
 		&Large {
@@ -24,8 +28,30 @@
 			}
 
 			@include media(phone) {
-				margin-bottom: 3.5rem !important;
+				margin-bottom: 3.6rem !important;
 			}
+		}
+
+		&XL {
+			margin-bottom: 5rem !important;
+
+			@include media(tab-port) {
+				margin-bottom: 4rem !important;
+			}
+
+			@include media(phone) {
+				margin-bottom: 3rem !important;
+			}
+		}
+
+		&XXL {
+			margin-bottom: 6rem !important;
+		}
+	}
+
+	&Top {
+		&Small {
+			margin-top: 0.8rem !important;
 		}
 	}
 }
