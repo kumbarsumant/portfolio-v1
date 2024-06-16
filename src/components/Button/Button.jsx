@@ -13,7 +13,7 @@ const Button = ({
 		<MUIButton
 			variant={variant}
 			color={color}
-			className={`${className} ${styles.btn}`}
+			className={`button ${className} ${styles.btn}`}
 			{...props}
 		>
 			{children}

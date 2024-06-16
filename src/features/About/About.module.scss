@@ -2,4 +2,8 @@
 
 .sectionAbout {
 	padding-top: 3rem !important;
+
+	@include media(tab-port) {
+		padding-top: 0 !important;
+	}
 }

@@ -14,7 +14,7 @@ const skills = [
 
 const About = () => {
 	return (
-		<section className={`section ${styles.sectionAbout}`}>
+		<section id="about" className={`section ${styles.sectionAbout}`}>
 			<Typography variant="h2" className="marginBottomXL">
 				About
 			</Typography>
@@ -50,7 +50,7 @@ const About = () => {
 			<Grid container rowSpacing={5} columnSpacing={4}>
 				{skills.map((skill) => {
 					return (
-						<Grid key={skill.label} item xs={12} md={6}>
+						<Grid key={skill.label} item xs={12} md={12} lg={6}>
 							<LinearProgressBar
 								label={skill.label}
 								progress={skill.progress}

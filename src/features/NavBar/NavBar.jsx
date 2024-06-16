@@ -66,7 +66,10 @@ const NavBar = () => {
 								key={item.name}
 								href={item.link}
 								active={item.name === activeMenuItem}
-								onClick={() => setActiveMenuItem(item.name)}
+								onClick={() => {
+									setIsDrawerOpen(false);
+									setActiveMenuItem(item.name);
+								}}
 							>
 								{item.name}
 							</MenuItem>

@@ -6,6 +6,7 @@ import {
 import PropTypes from 'prop-types';
 import Button from '../Button';
 import Typography from '../Typography';
+import styles from './Card.module.scss';
 
 const Card = ({ title, body, actions, ...props }) => {
 	let actionButtons;
@@ -18,10 +19,6 @@ const Card = ({ title, body, actions, ...props }) => {
 					target="_blank"
 					color="primary"
 					key={url}
-					sx={{
-						textTransform: 'uppercase',
-						fontSize: '1.4rem',
-					}}
 				>
 					{label}
 				</Button>
@@ -36,7 +33,11 @@ const Card = ({ title, body, actions, ...props }) => {
 				</Typography>
 				<Typography variant="body1">{body}</Typography>
 			</MUICardContent>
-			{actions && <MUICardActions>{actionButtons}</MUICardActions>}
+			{actions && (
+				<MUICardActions className={styles.cardActions}>
+					{actionButtons}
+				</MUICardActions>
+			)}
 		</MUICard>
 	);
 };

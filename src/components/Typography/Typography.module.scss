@@ -28,6 +28,20 @@ h2.typography {
 	}
 }
 
+h4.typography {
+	@include media(tab-port) {
+		font-size: 3rem !important;
+	}
+
+	@include media(phone) {
+		font-size: 2.6rem !important;
+	}
+
+	@include media(small-phone) {
+		font-size: 2rem !important;
+	}
+}
+
 h6.typography {
 	@include media(tab-port) {
 		font-size: 2.8rem !important;

@@ -23,7 +23,12 @@ const Hero = () => {
 						<Button size="large" className={styles.btn}>
 							Contact Me
 						</Button>
-						<Button variant="outlined" className={styles.btn} size="large">
+						<Button
+							variant="outlined"
+							href="#about"
+							className={styles.btn}
+							size="large"
+						>
 							Explore More
 						</Button>
 					</Box>

@@ -1,0 +1,13 @@
+@import '../../styles/sass/main.scss';
+
+.cardActions {
+	@include media(tab-port) {
+		justify-content: flex-end !important;
+	}
+
+	a {
+		@include media(tab-port) {
+			font-size: 2rem !important;
+		}
+	}
+}

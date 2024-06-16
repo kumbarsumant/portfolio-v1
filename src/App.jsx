@@ -4,6 +4,7 @@ import theme from './styles/js/theme';
 import Header from './layouts/Header';
 import Hero from './features/Hero';
 import About from './features/About';
+import Projects from './features/Projects';
 import './styles/sass/main.scss';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
 			<main>
 				<Hero />
 				<About />
+				<Projects />
 			</main>
 		</ThemeProvider>
 	);

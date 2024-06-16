@@ -4,6 +4,7 @@
 	&Hero {
 		height: 100vh;
 		min-height: 100vh;
+		padding-top: 3rem !important;
 		padding-bottom: 0 !important;
 
 		@include media(phone) {
@@ -68,7 +69,7 @@
 	width: 38rem;
 
 	@include media(tab-port) {
-		width: 42rem;
+		width: 45rem;
 	}
 
 	@include media(phone) {
@@ -89,7 +90,7 @@
 			position: absolute;
 			top: 50%;
 			right: 50%;
-			transform: translateY(-50%);
+			transform: translateY(calc(-50% - 1px));
 			background-color: $color-grey-light;
 			z-index: -1;
 
