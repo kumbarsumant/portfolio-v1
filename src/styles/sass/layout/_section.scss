@@ -15,6 +15,32 @@ main {
 
 	@include media(tab) {
 		text-align: center;
+		padding: 8rem 0;
+	}
+
+	@include media(phone) {
+		text-align: center;
+		padding: 0;
+	}
+
+	@media (max-width: 400px) {
+		padding: 4rem 0;
+	}
+}
+
+.footer {
+	width: 100%;
+	max-width: $max-width;
+	padding: 6rem 0;
+	margin: 5rem auto 0;
+	border-top: 1px solid $color-grey-light;
+
+	@include media(tab-port) {
+		text-align: center;
+	}
+
+	@include media(phone) {
 		padding: 3rem 0;
+		margin: 2rem auto 0;
 	}
 }

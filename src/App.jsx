@@ -5,6 +5,7 @@ import Header from './layouts/Header';
 import Hero from './features/Hero';
 import About from './features/About';
 import Projects from './features/Projects';
+import Footer from './layouts/Footer';
 import './styles/sass/main.scss';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
 				<About />
 				<Projects />
 			</main>
+			<Footer />
 		</ThemeProvider>
 	);
 };

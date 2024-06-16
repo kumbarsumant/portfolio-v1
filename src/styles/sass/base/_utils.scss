@@ -1,14 +1,18 @@
 .margin {
 	&Bottom {
 		&Small {
-			margin-bottom: 0.8rem !important;
+			margin-bottom: 1.2rem !important;
 		}
 
 		&Medium {
-			margin-bottom: 2rem !important;
+			margin-bottom: 1.8rem !important;
 
 			@include media(tab-port) {
 				margin-bottom: 3rem !important;
+			}
+
+			@include media(phone) {
+				margin-bottom: 1.6rem !important;
 			}
 		}
 
