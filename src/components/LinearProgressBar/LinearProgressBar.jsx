@@ -3,9 +3,6 @@ import { LinearProgress } from '@mui/material';
 import Stack from '../Stack';
 import Typography from '../Typography';
 import styles from './LinearProgressBar.module.scss';
-import { styleVariables } from '../../styles';
-
-const { colors } = styleVariables;
 
 const LinearProgressBar = ({ label, progress }) => {
 	return (
@@ -28,12 +25,13 @@ const LinearProgressBar = ({ label, progress }) => {
 
 			{/* Progress bar */}
 			<LinearProgress
-				sx={{
-					'&.MuiLinearProgress-root': {
-						height: 8,
-						backgroundColor: colors.lightGreyColor,
-					},
-				}}
+				className={styles.linearProgress}
+				// sx={{
+				// 	'&.MuiLinearProgress-root': {
+				// 		height: 8,
+				// 		backgroundColor: colors.lightGreyColor,
+				// 	},
+				// }}
 				variant="determinate"
 				value={progress}
 			/>

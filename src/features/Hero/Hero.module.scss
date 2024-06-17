@@ -4,13 +4,32 @@
 	&Hero {
 		height: 100vh;
 		min-height: 100vh;
-		padding-top: 3rem !important;
-		padding-bottom: 0 !important;
+		padding-top: 3rem;
+		padding-bottom: 0;
+
+		@include media(lg-tab-land) {
+			height: 145vh;
+		}
+
+		@include media(tab-land) {
+			height: 140rem;
+			padding: 6rem 0;
+		}
+
+		@include media(lg-tab-port) {
+			height: 120rem;
+			padding: 6rem 0;
+		}
 
 		@include media(phone) {
-			height: auto;
-			padding-top: 4rem !important;
+			height: 100vh;
+			padding: 6rem 0 7rem !important;
 		}
+
+		// @include media(phone) {
+		// 	height: auto;
+		// 	padding-top: 4rem !important;
+		// }
 	}
 }
 
@@ -21,17 +40,16 @@
 		align-items: stretch;
 		height: 100%;
 		padding-top: 6rem;
-		flex-direction: row;
 
-		@include media(tab-port) {
-			flex-direction: row-reverse;
-			padding-top: 4rem;
-			row-gap: 2rem;
-		}
+		// @include media(tab-port) {
+		// 	flex-direction: row-reverse;
+		// 	padding-top: 4rem;
+		// 	row-gap: 2rem;
+		// }
 
-		@include media(phone) {
-			row-gap: 4.5rem;
-		}
+		// @include media(phone) {
+		// 	row-gap: 4.5rem;
+		// }
 	}
 }
 
@@ -42,13 +60,31 @@
 	flex-direction: column !important;
 	height: 100%;
 
-	@include media(tab-port) {
+	@include media(lg-tab-land) {
 		order: 2;
-		height: auto;
-		justify-content: flex-start;
+		height: 50%;
 		align-items: center;
-		text-align: center;
 	}
+
+	@include media(tab-land) {
+		height: 46%;
+	}
+
+	@include media(lg-tab-port) {
+		height: 50%;
+	}
+
+	@include media(phone) {
+		height: 68%;
+	}
+
+	// @include media(tab-port) {
+	// 	order: 2;
+	// 	height: auto;
+	// 	justify-content: flex-start;
+	// 	align-items: center;
+	// 	text-align: center;
+	// }
 }
 
 .mainImgContainer {
@@ -58,27 +94,69 @@
 	flex-direction: column !important;
 	height: 100%;
 
-	@include media(tab-port) {
+	@include media(lg-tab-land) {
 		order: 1;
-		height: auto;
 		align-items: center;
+		height: 50%;
 	}
+
+	@include media(tab-land) {
+		height: 54%;
+	}
+
+	@include media(lg-tab-port) {
+		height: 50%;
+	}
+
+	@include media(phone) {
+		height: 42%;
+	}
+
+	// @include media(tab-port) {
+	// 	order: 1;
+	// 	height: auto;
+	// 	align-items: center;
+	// }
 }
 
 .img {
 	width: 38rem;
 
-	@include media(tab-port) {
-		width: 45rem;
+	@include media(tab-land) {
+		width: 54rem;
+	}
+
+	@include media(lg-tab-port) {
+		width: 40rem;
 	}
 
 	@include media(phone) {
-		width: 30rem;
+		width: 28rem;
+	}
+
+	@include media(medium-phone) {
+		width: 25rem;
 	}
 
 	@include media(small-phone) {
-		width: 26rem;
+		width: 20rem;
 	}
+
+	@include media(very-small-phone) {
+		width: 19rem;
+	}
+
+	// @include media(tab-port) {
+	// 	width: 45rem;
+	// }
+
+	// @include media(phone) {
+	// 	width: 30rem;
+	// }
+
+	// @include media(small-phone) {
+	// 	width: 26rem;
+	// }
 
 	&Container {
 		position: relative;
@@ -98,6 +176,11 @@
 				height: calc(100% + 2rem);
 				width: calc(50% + 1rem);
 			}
+
+			@include media(very-small-phone) {
+				height: calc(100% + 1.4rem);
+				width: calc(50% + 0.7rem);
+			}
 		}
 	}
 }
@@ -112,7 +195,11 @@
 		justify-content: flex-start;
 		align-items: center;
 		flex-wrap: wrap;
-		gap: 2rem;
+		gap: 3.5rem;
+
+		@include media(phone) {
+			gap: 2rem;
+		}
 	}
 }
 

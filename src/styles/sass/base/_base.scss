@@ -14,11 +14,27 @@ html {
 body {
 	width: 100%;
 
-	@include media(tab-port) {
-		padding: 3rem;
+	@include media(lg-tab-land) {
+		padding: 0 10rem;
+	}
+
+	@include media(tab-land) {
+		padding: 0 8rem;
+	}
+
+	@include media(lg-tab-port) {
+		padding: 0 6rem;
 	}
 
 	@include media(phone) {
-		padding: 2rem;
+		padding: 0 2rem;
 	}
+
+	// @include media(tab-port) {
+	// 	padding: 3rem;
+	// }
+
+	// @include media(phone) {
+	// 	padding: 2rem;
+	// }
 }

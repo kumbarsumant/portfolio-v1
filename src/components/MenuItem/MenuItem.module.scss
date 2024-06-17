@@ -1,9 +1,12 @@
 @import '../../styles/sass/main.scss';
 
 .li {
-	@include media(tab) {
+	@include media(lg-tab-land) {
 		width: 100%;
 	}
+	// @include media(tab) {
+	// 	width: 100%;
+	// }
 
 	a {
 		&:link,
@@ -18,29 +21,62 @@
 		font-family: $font-tertiary;
 		text-decoration: none;
 
-		@include media(tab-port) {
-			font-size: 2.4rem;
+		@include media(lg-tab-land) {
+			font-size: 2.6rem;
+			padding: 3rem 4rem;
 		}
 
-		@include media(tab) {
-			padding: 3rem 4rem;
-			font-size: 2.4rem;
+		@include media(tab-land) {
+			font-size: 2.8rem;
+		}
+
+		@include media(lg-tab-port) {
+			font-size: 2.6rem;
 		}
 
 		@include media(phone) {
-			font-size: 2.2rem;
+			font-size: 2rem;
+			padding: 2.5rem 4rem;
+		}
+
+		@include media(medium-phone) {
+			font-size: 1.8rem;
+			padding: 2.2rem 4rem;
 		}
 
 		@include media(small-phone) {
-			padding: 2.5rem 3rem;
-			font-size: 2rem;
+			font-size: 1.6rem;
+			padding: 2rem 4rem;
 		}
+
+		@include media(very-small-phone) {
+			font-size: 1.6rem;
+			padding: 1.6rem 4rem;
+		}
+
+		// @include media(tab-port) {
+		// 	font-size: 2.4rem;
+		// }
+
+		// @include media(tab) {
+		// 	padding: 3rem 4rem;
+		// 	font-size: 2.4rem;
+		// }
+
+		// @include media(phone) {
+		// 	font-size: 2.2rem;
+		// }
+
+		// @include media(small-phone) {
+		// 	padding: 2.5rem 3rem;
+		// 	font-size: 2rem;
+		// }
 
 		&:hover,
 		&:active {
-			@include media(tab) {
-				background-color: lighten($color-primary, 20%);
-			}
+			// @include media(tab) {
+			// 	background-color: lighten($color-primary, 20%);
+			// }
 		}
 	}
 }
@@ -53,20 +89,27 @@
 		&:visited {
 			color: $color-primary;
 
-			@include media(tab) {
+			@include media(lg-tab-land) {
 				color: $color-dark;
+				background-color: lighten($color-grey-light, 5%);
 			}
+			// @include media(tab) {
+			// 	color: $color-dark;
+			// }
 		}
 
-		@include media(tab) {
-			background-color: lighten($color-primary, 20%);
-		}
+		// @include media(tab) {
+		// 	background-color: lighten($color-primary, 20%);
+		// }
 
 		&:hover,
 		&:active {
-			@include media(tab) {
-				background-color: lighten($color-primary, 20%);
+			@include media(lg-tab-land) {
+				background-color: lighten($color-grey-light, 5%);
 			}
+			// @include media(tab) {
+			// 	background-color: lighten($color-primary, 20%);
+			// }
 		}
 	}
 
@@ -81,10 +124,15 @@
 		transform: translateX(-50%);
 		border-radius: 10rem;
 
-		@include media(tab) {
+		@include media(lg-tab-land) {
 			height: 0;
 			width: 0;
 		}
+
+		// @include media(tab) {
+		// 	height: 0;
+		// 	width: 0;
+		// }
 	}
 }
 

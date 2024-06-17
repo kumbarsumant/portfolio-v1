@@ -11,34 +11,65 @@ $menu-item-gap: 6rem;
 	transform: translateX(-50%);
 	background-color: $color-white;
 	z-index: 1000;
+
+	@include media(lg-tab-land) {
+		max-width: 120rem;
+	}
+
+	@include media(tab-land) {
+		max-width: $max-width;
+	}
 }
 
 :global {
 	.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium {
 		display: none;
 
-		@include media(tab) {
+		@include media(lg-tab-land) {
 			display: flex;
-			justify-content: flex-end;
-			align-items: center;
-			padding: 2.2rem;
+			padding: 1.6rem;
+			z-index: 1000;
 		}
 
 		@include media(phone) {
-			padding: 2rem;
+			padding: 1.4rem;
 		}
 
 		@include media(small-phone) {
-			padding: 1.6rem;
+			padding: 1.2rem;
 		}
+
+		@include media(very-small-phone) {
+			padding: 1rem;
+		}
+
+		// @include media(tab-land) {
+		// 	display: flex;
+		// 	padding: 1.6rem;
+		// 	z-index: 1000;
+		// }
+
+		// @include media(tab) {
+		// 	display: flex;
+		// 	justify-content: flex-end;
+		// 	align-items: center;
+		// 	padding: 2.2rem;
+		// }
+
+		// @include media(phone) {
+		// 	padding: 2rem;
+		// }
+
+		// @include media(small-phone) {
+		// 	padding: 1.6rem;
+		// }
 	}
 }
 
 .menuButton {
 	&Icon {
-		@include media(tab) {
-			font-size: 4.5rem !important;
-			color: $color-dark;
+		@include media(lg-tab-land) {
+			font-size: 6rem !important;
 		}
 
 		@include media(phone) {
@@ -46,8 +77,28 @@ $menu-item-gap: 6rem;
 		}
 
 		@include media(small-phone) {
+			font-size: 3.5rem !important;
+		}
+
+		@include media(very-small-phone) {
 			font-size: 3rem !important;
 		}
+
+		// @include media(tab-land) {
+		// 	font-size: 6rem !important;
+		// }
+		// @include media(tab) {
+		// 	font-size: 4.5rem !important;
+		// 	color: $color-dark;
+		// }
+
+		// @include media(phone) {
+		// 	font-size: 4rem !important;
+		// }
+
+		// @include media(small-phone) {
+		// 	font-size: 3rem !important;
+		// }
 	}
 }
 
@@ -57,17 +108,25 @@ $menu-item-gap: 6rem;
 	align-items: center;
 	padding: 2.5rem 0;
 
-	@include media(tab-port) {
-		padding: 3rem;
+	@include media(lg-tab-land) {
+		padding: 0.5rem;
 	}
 
-	@include media(tab) {
-		padding: 2rem;
-	}
+	// @include media(tab-land) {
+	// 	padding: 0.5rem;
+	// }
 
-	@include media(tab) {
-		padding: 0;
-	}
+	// @include media(tab-port) {
+	// 	padding: 3rem;
+	// }
+
+	// @include media(tab) {
+	// 	padding: 2rem;
+	// }
+
+	// @include media(tab) {
+	// 	padding: 0;
+	// }
 
 	// @include media(phone) {
 	// 	padding: 0;
@@ -80,9 +139,17 @@ $menu-item-gap: 6rem;
 		list-style-type: none;
 		gap: $menu-item-gap;
 
-		@include media(tab) {
+		@include media(lg-tab-land) {
 			display: none;
 		}
+
+		// @include media(tab-land) {
+		// 	display: none;
+		// }
+
+		// @include media(tab) {
+		// 	display: none;
+		// }
 
 		// @include media(phone) {
 		// 	display: none;
@@ -92,25 +159,69 @@ $menu-item-gap: 6rem;
 	&ContainerMobile {
 		display: none;
 
-		@include media(tab) {
+		@include media(lg-tab-land) {
 			position: fixed;
-			width: 100%;
-			height: 100vh;
-			top: 9rem;
+			z-index: 100;
+			background-color: $color-white;
+			inset: 0;
 			display: flex;
 			justify-content: flex-start;
-			align-items: flex-start;
+			align-items: center;
 			flex-direction: column;
 			list-style-type: none;
-			background-color: lighten($color-primary, 5%);
+			height: 100vh;
+			top: 10rem;
 		}
 
 		@include media(phone) {
-			top: 7.5rem;
+			top: 8rem;
+		}
+
+		@include media(medium-phone) {
+			top: 8rem;
 		}
 
 		@include media(small-phone) {
-			top: 6.3rem;
+			top: 7rem;
 		}
+
+		@include media(very-small-phone) {
+			top: 6.1rem;
+		}
+
+		// @include media(tab-land) {
+		// 	position: fixed;
+		// 	z-index: 100;
+		// 	background-color: $color-white;
+		// 	inset: 0;
+		// 	display: flex;
+		// 	justify-content: flex-start;
+		// 	align-items: center;
+		// 	flex-direction: column;
+		// 	list-style-type: none;
+		// 	height: 100vh;
+		// 	top: 10rem;
+		// }
+
+		// @include media(tab) {
+		// 	position: fixed;
+		// 	width: 100%;
+		// 	height: 100vh;
+		// 	top: 9rem;
+		// 	display: flex;
+		// 	justify-content: flex-start;
+		// 	align-items: flex-start;
+		// 	flex-direction: column;
+		// 	list-style-type: none;
+		// 	background-color: lighten($color-primary, 5%);
+		// }
+
+		// @include media(phone) {
+		// 	top: 7.5rem;
+		// }
+
+		// @include media(small-phone) {
+		// 	top: 6.3rem;
+		// }
 	}
 }

@@ -19,6 +19,7 @@ const Card = ({ title, body, actions, ...props }) => {
 					target="_blank"
 					color="primary"
 					key={url}
+					className={styles.actionButtons}
 				>
 					{label}
 				</Button>
@@ -26,9 +27,9 @@ const Card = ({ title, body, actions, ...props }) => {
 		});
 	}
 	return (
-		<MUICard variant="outlined" {...props}>
+		<MUICard className={styles.card} variant="outlined" {...props}>
 			<MUICardContent>
-				<Typography variant="h4" mb={3} gutterBottom>
+				<Typography variant="h4" className="marginBottomMedium">
 					{title}
 				</Typography>
 				<Typography variant="body1">{body}</Typography>

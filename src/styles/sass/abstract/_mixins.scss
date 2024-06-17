@@ -1,27 +1,47 @@
-$small-phone: '360px';
-$phone: '600px';
-$tablet: '900px';
-$tablet-port: '1200px';
+$xxsm: '320px';
+$xsm: '360px';
+$msm: '390px';
+$sm: '480px';
+$md: '768px';
+$lg: '920px';
+$xl: '1024px';
+$xxl: '1280px';
+
+// 320, 344, 353, 360, 375, imp(390), imp(412), 414, imp(430),  -> MOBILE
+// 540, 712, imp(768), 820, imp(853), imp(912), imp(1024) - TAB
+// 1024, 1138, 1180, 1136, 1280, 1368, - TAB PORT
 
 @mixin media($size) {
-	@if $size == small-phone {
-		@media (max-width: $small-phone) {
+	@if ($size == very-small-phone) {
+		@media (max-width: $xxsm) {
 			@content;
 		}
-	} @else if $size == phone {
-		@media (max-width: $phone) {
+	} @else if ($size == small-phone) {
+		@media (max-width: $xsm) {
 			@content;
 		}
-	} @else if $size == tab {
-		@media (max-width: $tablet) {
+	} @else if ($size == medium-phone) {
+		@media (max-width: $msm) {
 			@content;
 		}
-	} @else if $size == tab-port {
-		@media (max-width: $tablet-port) {
+	} @else if ($size == phone) {
+		@media (max-width: $sm) {
 			@content;
 		}
-	} @else if $size == very-small-phone {
-		@media (max-width: '300px') {
+	} @else if ($size == tab-port) {
+		@media (max-width: $md) {
+			@content;
+		}
+	} @else if ($size == lg-tab-port) {
+		@media (max-width: $lg) {
+			@content;
+		}
+	} @else if ($size == tab-land) {
+		@media (max-width: $xl) {
+			@content;
+		}
+	} @else if ($size == lg-tab-land) {
+		@media (max-width: $xxl) {
 			@content;
 		}
 	}

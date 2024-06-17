@@ -5,47 +5,99 @@
 		}
 
 		&Medium {
-			margin-bottom: 1.8rem !important;
+			margin-bottom: 2.2rem !important;
 
-			@include media(tab-port) {
-				margin-bottom: 3rem !important;
+			@include media(lg-tab-land) {
+				margin-bottom: 3.2rem !important;
 			}
 
 			@include media(phone) {
+				margin-bottom: 2.2rem !important;
+			}
+
+			@include media(medium-phone) {
+				margin-bottom: 2rem !important;
+			}
+
+			@include media(small-phone) {
+				margin-bottom: 1.8rem !important;
+			}
+
+			@include media(very-small-phone) {
 				margin-bottom: 1.6rem !important;
 			}
+
+			// @include media(tab-port) {
+			// 	margin-bottom: 3rem !important;
+			// }
+
+			// @include media(phone) {
+			// 	margin-bottom: 1.6rem !important;
+			// }
 		}
 
 		&SemiLarge {
 			margin-bottom: 3rem !important;
-
-			@include media(tab-port) {
-				margin-bottom: 3.3rem !important;
-			}
 		}
 
 		&Large {
-			margin-bottom: 4rem !important;
+			margin-bottom: 5rem !important;
 
-			@include media(tab-port) {
+			@include media(tab-land) {
 				margin-bottom: 6rem !important;
 			}
 
 			@include media(phone) {
-				margin-bottom: 3.6rem !important;
+				margin-bottom: 3rem !important;
 			}
+
+			@include media(medium-phone) {
+				margin-bottom: 2.6rem !important;
+			}
+
+			@include media(small-phone) {
+				margin-bottom: 2.3rem !important;
+			}
+
+			@include media(very-small-phone) {
+				margin-bottom: 2rem !important;
+			}
+
+			// @include media(tab-port) {
+			// 	margin-bottom: 6rem !important;
+			// }
+
+			// @include media(phone) {
+			// 	margin-bottom: 3.6rem !important;
+			// }
 		}
 
 		&XL {
 			margin-bottom: 5rem !important;
 
-			@include media(tab-port) {
+			@include media(phone) {
 				margin-bottom: 4rem !important;
 			}
 
-			@include media(phone) {
+			@include media(medium-phone) {
+				margin-bottom: 3.8rem !important;
+			}
+
+			@include media(small-phone) {
+				margin-bottom: 3.4rem !important;
+			}
+
+			@include media(very-small-phone) {
 				margin-bottom: 3rem !important;
 			}
+
+			// @include media(tab-port) {
+			// 	margin-bottom: 4rem !important;
+			// }
+
+			// @include media(phone) {
+			// 	margin-bottom: 3rem !important;
+			// }
 		}
 
 		&XXL {

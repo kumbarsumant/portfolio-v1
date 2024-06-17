@@ -36,7 +36,7 @@ const About = () => {
 				that the solutions I whip up are not just fancy but also efficient. My
 				goal? To create web experiences that flow seamlessly, blending
 				innovative design with technical wizardry. Let&apos;s make the web a
-				better place, one awesome interface at a time! ✨
+				better place, one awesome interface at a time!
 			</Typography>
 			<Typography className="marginBottomXXL">
 				With a rich tapestry of languages under my belt, each acquired through
@@ -47,7 +47,7 @@ const About = () => {
 				further enhance my capabilities and embrace new horizons of expertise.
 			</Typography>
 
-			<Grid container rowSpacing={5} columnSpacing={4}>
+			<Grid container spacing={4}>
 				{skills.map((skill) => {
 					return (
 						<Grid key={skill.label} item xs={12} md={12} lg={6}>

@@ -1,59 +1,139 @@
 @import '../../styles/sass/main.scss';
 
 h1.typography {
-	@include media(tab-port) {
+	@include media(lg-tab-port) {
 		font-size: 7rem !important;
 	}
 
 	@include media(phone) {
-		font-size: 4rem !important;
+		font-size: 4.5rem !important;
+	}
+
+	@include media(medium-phone) {
+		font-size: 3.8rem !important;
 	}
 
 	@include media(small-phone) {
-		font-size: 2.8rem !important;
+		font-size: 3.2rem !important;
 	}
+
+	@include media(very-small-phone) {
+		font-size: 2.4rem !important;
+	}
+
+	// @include media(phone) {
+	// 	font-size: 4rem !important;
+	// }
+
+	// @include media(small-phone) {
+	// 	font-size: 2.8rem !important;
+	// }
 }
 
 h2.typography {
-	@include media(tab-port) {
+	@include media(lg-tab-port) {
 		font-size: 6rem !important;
 	}
 
 	@include media(phone) {
-		font-size: 4rem !important;
+		font-size: 4.5rem !important;
+	}
+
+	@include media(medium-phone) {
+		font-size: 3.8rem !important;
 	}
 
 	@include media(small-phone) {
-		font-size: 2.6rem !important;
+		font-size: 3.2rem !important;
 	}
+
+	@include media(very-small-phone) {
+		font-size: 2.4rem !important;
+	}
+
+	// @include media(small-phone) {
+	// 	font-size: 2.6rem !important;
+	// }
 }
 
 h4.typography {
-	@include media(tab-port) {
-		font-size: 3rem !important;
+	@include media(lg-tab-land) {
+		font-size: 2.6rem;
+	}
+
+	@include media(tab-land) {
+		font-size: 3rem;
 	}
 
 	@include media(phone) {
-		font-size: 2.6rem !important;
+		font-size: 2.6rem;
+	}
+
+	@include media(medium-phone) {
+		font-size: 2.4rem !important;
 	}
 
 	@include media(small-phone) {
 		font-size: 2rem !important;
 	}
+
+	@include media(very-small-phone) {
+		font-size: 1.8rem !important;
+	}
+
+	// @include media(tab-port) {
+	// 	font-size: 3rem !important;
+	// }
+
+	// @include media(phone) {
+	// 	font-size: 2.6rem !important;
+	// }
+
+	// @include media(small-phone) {
+	// 	font-size: 2rem !important;
+	// }
 }
 
 h6.typography {
-	@include media(tab-port) {
-		font-size: 2.8rem !important;
+	@include media(lg-tab-land) {
+		font-size: 2.2rem;
+	}
+
+	@include media(tab-land) {
+		font-size: 2.8rem;
+	}
+
+	@include media(lg-tab-port) {
+		font-size: 2.5rem !important;
 	}
 
 	@include media(phone) {
-		font-size: 2rem !important;
+		font-size: 1.8rem !important;
+	}
+
+	@include media(medium-phone) {
+		font-size: 1.7rem !important;
 	}
 
 	@include media(small-phone) {
-		font-size: 1.4rem !important;
+		font-size: 1.5rem !important;
 	}
+
+	@include media(very-small-phone) {
+		font-size: 1.3rem !important;
+	}
+
+	// @include media(tab-port) {
+	// 	font-size: 2.8rem !important;
+	// }
+
+	// @include media(phone) {
+	// 	font-size: 2rem !important;
+	// }
+
+	// @include media(small-phone) {
+	// 	font-size: 1.4rem !important;
+	// }
 }
 
 p.typography {
@@ -62,16 +142,44 @@ p.typography {
 	line-height: 1.6;
 	word-spacing: 0.2rem;
 
-	@include media(tab-port) {
+	@include media(lg-tab-land) {
+		font-size: 2.2rem;
+	}
+
+	@include media(tab-land) {
 		font-size: 2.8rem;
 	}
 
+	@include media(lg-tab-port) {
+		font-size: 2.5rem !important;
+	}
+
 	@include media(phone) {
-		font-size: 2rem;
-		line-height: 1.6;
+		font-size: 1.8rem !important;
+	}
+
+	@include media(medium-phone) {
+		font-size: 1.7rem !important;
 	}
 
 	@include media(small-phone) {
-		font-size: 1.4rem;
+		font-size: 1.5rem !important;
 	}
+
+	@include media(very-small-phone) {
+		font-size: 1.3rem !important;
+	}
+
+	// @include media(tab-port) {
+	// 	font-size: 2.8rem;
+	// }
+
+	// @include media(phone) {
+	// 	font-size: 2rem;
+	// 	line-height: 1.6;
+	// }
+
+	// @include media(small-phone) {
+	// 	font-size: 1.4rem;
+	// }
 }

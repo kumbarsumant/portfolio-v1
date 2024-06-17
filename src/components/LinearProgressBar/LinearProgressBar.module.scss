@@ -4,15 +4,60 @@
 	font-size: 1.4rem !important;
 	font-weight: 400 !important;
 
-	@include media(tab-port) {
-		font-size: 2.4rem !important;
+	@include media(lg-tab-land) {
+		font-size: 2rem !important;
 	}
 
-	@include media(tab) {
+	@include media(tab-land) {
 		font-size: 2.2rem !important;
 	}
 
+	@include media(tab-land) {
+		font-size: 1.7rem !important;
+	}
+
+	@include media(medium-phone) {
+		font-size: 1.5rem !important;
+	}
+
 	@include media(small-phone) {
-		font-size: 1.4rem !important;
+		font-size: 1.3rem !important;
+	}
+
+	@include media(very-small-phone) {
+		font-size: 1.2rem !important;
+	}
+
+	// @include media(tab-port) {
+	// 	font-size: 2.4rem !important;
+	// }
+
+	// @include media(tab) {
+	// 	font-size: 2.2rem !important;
+	// }
+
+	// @include media(small-phone) {
+	// 	font-size: 1.4rem !important;
+	// }
+}
+
+.linearProgress {
+	height: 0.8rem !important;
+	background-color: lighten($color-grey-light-2, 15%) !important;
+
+	@include media(lg-tab-land) {
+		height: 1rem !important;
+	}
+
+	@include media(tab-land) {
+		height: 1.2rem !important;
+	}
+
+	@include media(phone) {
+		height: 0.9rem !important;
+	}
+
+	@include media(medium-phone) {
+		height: 0.8rem !important;
 	}
 }
