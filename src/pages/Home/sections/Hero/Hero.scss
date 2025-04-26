@@ -1,0 +1,15 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+
+  &__container {
+    width: 50%;
+    max-width: 80rem;
+  }
+  &__heading {
+    display: block;
+  }
+}
