@@ -38,7 +38,6 @@ body {
 
 .heading {
   font-family: $font-heading;
-  text-align: center;
   color: $color-black;
   line-height: 0.95;
   font-weight: 500;
@@ -55,12 +54,31 @@ body {
 
 .section {
   @include max-width-center;
+  padding: 10rem 0;
+  position: relative;
+
+  &:not(:last-child)::after {
+    content: "";
+    height: 1px;
+    width: 30%;
+    position: absolute;
+    bottom: -1px;
+    border-bottom: 1px solid #797979;
+  }
+}
+
+.paragraph {
+  margin-bottom: 2.5rem;
 }
 
 .mg {
   &--b {
     &--lg {
       margin-bottom: 4rem;
+    }
+
+    &--xlg {
+      margin-bottom: 6rem;
     }
   }
 }

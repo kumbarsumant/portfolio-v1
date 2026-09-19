@@ -39,8 +39,9 @@ const Hero = () => {
             <span className="hero__heading">I'm Sumanth.</span>
           </h1>
           <div className="hero__text">
-            Passionate software engineer and enthusiastic coder, dedicated to
-            building efficient and innovative software solutions.
+            Software Engineer building scalable backend architectures and AI
+            solutions. Focused on high-performance software that solves real
+            problems.
           </div>
         </div>
       </section>
