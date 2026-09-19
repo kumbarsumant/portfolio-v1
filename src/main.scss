@@ -1,4 +1,6 @@
-@use './styles/variables' as *;
+@use "./styles/variables" as *;
+@use "./styles/animations" as *;
+@use "./styles/mixins" as *;
 
 *,
 *::after,
@@ -18,8 +20,20 @@ body {
   font-family: $font-body;
   font-weight: 400;
   line-height: 1.6;
-  color: #454454;
-  word-spacing: 0.2rem;
+  color: #797979;
+  word-spacing: 0.3rem;
+}
+
+.bg-layer {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
+    url("../public/images/minimalist_background.avif");
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 .heading {
@@ -27,10 +41,20 @@ body {
   text-align: center;
   color: $color-black;
   line-height: 0.95;
+  font-weight: 500;
 
   &--primary {
     font-size: 12rem;
+    color: #d5d5d5;
   }
+}
+
+.header {
+  @include max-width-center;
+}
+
+.section {
+  @include max-width-center;
 }
 
 .mg {

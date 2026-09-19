@@ -1,0 +1,12 @@
+@use "./variables" as *;
+@use "./animations" as *;
+
+@mixin max-width-center {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+@mixin fade-in-up($duration: 1.2s, $delay: 0s) {
+  animation: fadeInUp $duration cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: $delay;
+}
