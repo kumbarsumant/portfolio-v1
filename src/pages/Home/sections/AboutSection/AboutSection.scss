@@ -3,19 +3,16 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    gap: 5rem;
+    gap: 6rem;
   }
 
   &__image-container {
-    // 1. Give the container a defined width or flex ratio so it doesn't collapse/blow out
     flex: 0 0 35rem;
-
-    // 2. Make it a flex container so inner 100% height works reliably
     display: flex;
 
-    // box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-    // background: #111;
-    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    background: #111;
+    border-radius: 0.5rem;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }

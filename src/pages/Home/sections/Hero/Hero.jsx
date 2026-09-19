@@ -9,12 +9,12 @@ const Hero = () => {
           <ul className="navbar__container">
             <li className="navbar__list">
               <a href="#about" className="navbar__list__item">
-                Home
+                About
               </a>
             </li>
             <li className="navbar__list">
               <a href="#about" className="navbar__list__item">
-                About
+                Work
               </a>
             </li>
             <li lassName="navbar__list">
@@ -36,7 +36,7 @@ const Hero = () => {
         <div className="hero__container">
           <h1 className="heading heading--primary mg--b--lg">
             <span className="hero__heading">Hi There,</span>
-            <span className="hero__heading">I'm Sumanth.</span>
+            <span className="hero__heading">I'm Sumant.</span>
           </h1>
           <div className="hero__text">
             Software Engineer building scalable backend architectures and AI
